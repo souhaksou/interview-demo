@@ -17,6 +17,8 @@ btn.addEventListener("click", function () {
   }
 });
 
+var offsetValue;
+
 $(document).ready(function () {    //頁面一進來就會跑的程式
   detectionWidow();            //偵測螢幕的function，第40行
 
@@ -33,7 +35,6 @@ function detectionWidow() {
     offsetValue = 0;
   }
 }
-var offsetValue;
 
 $('li>a').on('click', function (e) {// 監聽 nav 下的每個 a
   e.preventDefault();
